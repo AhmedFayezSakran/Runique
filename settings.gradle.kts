@@ -19,6 +19,9 @@ dependencyResolutionManagement {
     }
 }
 
+//This feature allows you to reference projects in a multi-module Gradle build in a more
+// type-safe and IDE-friendly manner, instead of using string-based project paths.
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 rootProject.name = "Runique"
 include(":app")
 include(":auth:data")
