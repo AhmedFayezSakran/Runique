@@ -1,12 +1,7 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        google ()
         mavenCentral()
         gradlePluginPortal()
     }
@@ -18,11 +13,11 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+rootProject.name = "Runique"
 
 //This feature allows you to reference projects in a multi-module Gradle build in a more
 // type-safe and IDE-friendly manner, instead of using string-based project paths.
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
-rootProject.name = "Runique"
 include(":app")
 include(":auth:data")
 include(":auth:domain")
@@ -37,3 +32,4 @@ include(":run:domain")
 include(":run:presentation")
 include(":run:location")
 include(":run:network")
+
