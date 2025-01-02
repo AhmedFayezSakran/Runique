@@ -35,4 +35,9 @@ android {
 dependencies {
     implementation(libs.org.mongodb.bson)
     implementation(projects.core.domain)
+    implementation(libs.androidx.monitor)
+    implementation(libs.androidx.junit.ktx)
+    testImplementation(libs.junit.junit)
+    testImplementation(libs.junit.junit)
+    androidTestImplementation(libs.junit.junit)
 }

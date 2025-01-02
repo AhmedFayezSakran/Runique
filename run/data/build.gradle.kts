@@ -42,4 +42,5 @@ dependencies {
     implementation(projects.core.domain)
     implementation(projects.core.database)
     implementation(projects.run.domain)
+    testImplementation(libs.junit.junit)
 }

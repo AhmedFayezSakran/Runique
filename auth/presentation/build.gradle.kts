@@ -36,4 +36,10 @@ dependencies {
     // by using enableFeaturePreview we can convert this "implementation(project(":auth:domain"))" to "implementation(projects.auth.domain)"
     implementation(projects.core.domain)
     implementation(projects.auth.domain)
+    implementation(libs.androidx.monitor)
+    implementation(libs.androidx.junit.ktx)
+    testImplementation(libs.junit.junit)
+    testImplementation(libs.junit.junit)
+    testImplementation(libs.testng)
+    androidTestImplementation(libs.junit.junit)
 }
